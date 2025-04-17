@@ -1,3 +1,33 @@
-body{
-    padding: 0 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 0 20px; */
+}
+
+#table-container {
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 700px) {
+    table {
+        font-size: 12px;
+    }
+}
+
+tr {
+    display: flex;
+}
+
+td {
+    flex: 1;
+}
+
+thead tr th:nth-child(2),
+thead tr th:nth-child(3),
+thead tr th:nth-child(4) {
+    flex: 1;
 }
