@@ -9,7 +9,7 @@ data.forEach(el => {
 function getTemplate(obj) {
     return `
     <table class="table table-bordered">
-        <h3>${obj.weekDay}</h3>
+        <h5>${obj.weekDay}</h5>
         <thead>
             <tr>
                 <th scope="col">№</th>
@@ -23,7 +23,7 @@ function getTemplate(obj) {
            obj.classes.map(el => {
             return `
             <tr>
-                <th scope="row">${el.id}</th>
+                <th scope="row">${el.id} .</th>
                 <td>${el.title}</td>
                 <td>${el.teacher}</td>
                 <td>${el.classRoom}</td>
